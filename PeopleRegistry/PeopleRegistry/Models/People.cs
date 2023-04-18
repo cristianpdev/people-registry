@@ -12,7 +12,7 @@ namespace PeopleRegistry.Models
         public string Name { get; set; }
         public string Surname { get; set; }
 
-        public string DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; set; }
 
         public string Sex { get; set; } 
 

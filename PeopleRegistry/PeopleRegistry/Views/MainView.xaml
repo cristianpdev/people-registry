@@ -13,5 +13,53 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+
+        <ListView x:Name="PeoplesListView"
+            Grid.Row="1" RowHeight="120" ItemsSource="{Binding People}">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+
+                        <Grid Padding="0,5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="05" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="1" 
+                                   Text="{Binding People.Name}"
+                                   FontSize="Large"
+                                   HorizontalOptions="EndAndExpand"/>
+                            <Label Grid.Column="2" 
+                                   Text="{Binding People.Surname}" 
+                                   FontSize="Large" 
+                                   HorizontalOptions="StartAndExpand"/>
+                            <Label Grid.Column="1" 
+                                   Text="{Binding People.DateOfBirth, StringFormat='{0:dd/MM/yyyy}'}" 
+                                   Grid.Row="1"    
+                                   FontSize="Default" 
+                                   HorizontalOptions="Center"/>
+                            <Label Grid.Column="2"                                    
+                                   Text="{Binding People.Sex}" 
+                                   FontSize="Default"
+                                   Grid.Row="1"
+                                   HorizontalOptions="Center"/>
+                            <Label Grid.Column="1" 
+                                   Text="{Binding People.City}" 
+                                   FontSize="Default"
+                                   Grid.Row="2"
+                                   HorizontalOptions="Center"/>
+                            <Label Grid.Column="2" 
+                                   Text="{Binding People.State}" 
+                                   FontSize="Default"
+                                   Grid.Row="2"
+                                   HorizontalOptions="Center"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
     </Grid>
 </ContentPage>
