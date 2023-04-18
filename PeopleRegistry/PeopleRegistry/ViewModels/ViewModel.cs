@@ -12,7 +12,7 @@ namespace PeopleRegistry.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public ObservableCollection<PeopleViewModel> Items { get; set; }
+        public ObservableCollection<TodoPeopleViewModel> Items { get; set; }
 
         public void RaisePropertyChanged(params string[] propertyNames)
         {

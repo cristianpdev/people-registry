@@ -4,9 +4,9 @@
              xmlns:local="clr-namespace:PeopleRegistry"
              xmlns:converters="clr-namespace:PeopleRegistry.Converters" 
              x:Class="PeopleRegistry.Views.MainView"
-             Title="Adicionar Pessoas">
+             Title="Cadastro de Pessoas">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Command="{Binding AddPeople}" />
+        <ToolbarItem Text="Add" Command="{Binding AddItem}" />
     </ContentPage.ToolbarItems>
     <Grid>
         <Grid.RowDefinitions>
