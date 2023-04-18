@@ -1,0 +1,9 @@
+.vs/
+PeopleRegistry/PeopleRegistry/bin/
+PeopleRegistry/PeopleRegistry/obj/
+
+PeopleRegistry/PeopleRegistry.Android/bin/
+PeopleRegistry/PeopleRegistry.Android/obj/
+
+PeopleRegistry/PeopleRegistry.iOS/bin/
+PeopleRegistry/PeopleRegistry.iOS/obj/

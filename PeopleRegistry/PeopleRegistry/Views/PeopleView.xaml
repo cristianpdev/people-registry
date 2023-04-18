@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeopleRegistry.Views.PeopleView">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Salvar" Command="{Binding Save}" />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Padding="14">
+
+        <Label Text="Nome" />
+        <Entry Text="{Binding People.Name}" />
+
+        <Label Text="Sobrenome" />
+        <Entry Text="{Binding People.Surname}" />
+
+        <Label Text="Data de Nascimento" />
+        <DatePicker Date="{Binding People.DateOfBirth}" />
+
+        <Label Text="Sexo" />
+        <Entry Text="{Binding People.Sex}" />
+
+        <Label Text="Endereço" />
+        <Entry Text="{Binding People.Address}" />
+
+        <Label Text="Cidade" />
+        <Entry Text="{Binding People.City}" />
+
+        <Label Text="UF" />
+        <Entry Text="{Binding People.State}" />
+
+    </StackLayout>
+</ContentPage>
